@@ -1,4 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+
+dotenv.config({ path: "./config/config.env" });
+
+
+// console.log(MONGO_URI)
 
 export const dbConnection = () => {
   mongoose
